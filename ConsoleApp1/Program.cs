@@ -5,6 +5,8 @@ using ConsoleApp1;
 
 try
 {
+    //BenchmarkRunner.Run<SleepVsDelayBenchmark>();
+    
     BenchmarkRunner.Run<ThreadStartVsThreadPoolQueueVsTaskRunBenchmark>(DefaultConfig.Instance.AddColumn(StatisticColumn.P95));
 }
 catch (Exception ex)
